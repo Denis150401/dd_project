@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет-магазин рекламы</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Магазин рекламных изделий</h1>
+    <nav>
+      <ul>
+        <li><a href="#signboards">Вывески</a></li>
+        <li><a href="#letters">Объемные буквы</a></li>
+        <li><a href="#stands">Стенды</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="searchInput" placeholder="Поиск по товарам...">
+    <button id="cartButton">Корзина (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="signboards">
+      <h2>Вывески</h2>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Вывеска 1">
+        <h3>Вывеска №1</h3>
+        <p>Описание товара...</p>
+        <button>В корзину</button>
+      </div>
+    </section>
+
+    <section id="letters">
+      <h2>Объемные буквы</h2>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Буквы 1">
+        <h3>Буквы №1</h3>
+        <p>Описание товара...</p>
+        <button>В корзину</button>
+      </div>
+    </section>
+
+    <section id="stands">
+      <h2>Стенды</h2>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Стенд 1">
+        <h3>Стенд №1</h3>
+        <p>Описание товара...</p>
+        <button>В корзину</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Магазин рекламных изделий</p>
+  </footer>
+
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Корзина</h2>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
